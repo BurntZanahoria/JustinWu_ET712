@@ -1,0 +1,58 @@
+*{box-sizing: border-box;}
+img{width: 100%; display: inline-block; height: 100}
+.gallerycontainer, .maincontainer{
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+}
+.maincontainer{position: relative; z-index: 0;}
+.gallerycontainer{
+    position: absolute; 
+    z-index: 1; 
+    overflow-x: scroll; 
+    white-space: nowrap;}
+.galleryimg{display: inline-block; width: 500px;}
+.btnright, .btnleft{
+    position: absolute; 
+    z-index: 2; 
+    top:40%; 
+    background-color: rgba(30,100,10,0.5); 
+    padding: 1rem; 
+    border: none; 
+    border-radius: 0.5rem;
+}
+.btnleft{left: 2%;}
+.btnright{right: 12;}
+.btnright:hover, .btnleft:hover{
+    background-color: rgb(30, 100, 10);
+    cursor: pointer;
+}
+/* resize */
+.resizewindow{
+    position: fixed;
+    top: 120px;   /* push it below header */
+    right: 3%;
+    background-color: rgba(30, 100, 10, 0.5);
+    color: whitesmoke;
+    padding: 1rem;
+}
+
+/* EXERCISE */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: #d9f0ff; 
+    color: purple; 
+    text-align: center;
+    line-height: 80px;
+    z-index: 1000;
+    transition: background-color 0.3s;
+}
+
+body{
+    margin: 0;
+    padding-top: 100px;
+}
