@@ -1,0 +1,15 @@
+*{box-sizing: border-box;}
+.subtitle{color:gray; font-style: italic;}
+img{width:100%; display: block;}
+.introimg{
+  border: ridge 20px lightcyan;
+  width: 500px;
+  margin: auto;
+}
+.footer{
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+}
