@@ -1,0 +1,32 @@
+.colorblue{
+    text-align: right;
+    font-weight: bolder;
+    color: aqua;
+}
+.hovercolor{
+    font-weight: bolder;
+    color: crimson
+}
+.mouseoutcolor{
+    color:green;
+}
+.square{
+    width: 200px;
+    height: 200px;
+    border: solid 2px gray;
+}
+/* Lab Exercise */
+.circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
