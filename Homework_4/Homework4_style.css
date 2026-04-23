@@ -1,0 +1,62 @@
+/* EXERCISE 1: FORM VALIDATION */
+
+body {
+    font-family: Arial;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+}
+
+#successMessage {
+    color: green;
+    font-weight: bold;
+}
+
+
+/* EXERCISE 2: CARD GALLERY */
+
+.gallery {
+    width: 600px;
+    overflow: hidden;
+    margin: 20px auto;
+    position: relative;
+}
+
+.track {
+    display: flex;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card {
+    width: 200px;
+    flex-shrink: 0;
+    background-color: lightblue;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+}
+
+.card h3 {
+    margin: 5px 0;
+}
+
+.card p {
+    font-size: 12px;
+    margin: 5px 0;
+}
+
+.card button {
+    margin-top: 5px;
+    padding: 5px;
+}
+

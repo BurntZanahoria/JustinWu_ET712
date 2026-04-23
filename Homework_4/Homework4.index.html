@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Exercises</title>
+    <link rel="stylesheet" href="Homework4_style.css">
+</head>
+<body>
+
+<!-- ===== EXERCISE 1: FORM VALIDATION ===== -->
+
+<h2>Register</h2>
+
+<form id="myForm">
+
+    <label>Full Name:</label><br>
+    <input type="text" id="name"><br>
+    <span id="nameError" class="error"></span><br>
+
+    <label>Email:</label><br>
+    <input type="text" id="email"><br>
+    <span id="emailError" class="error"></span><br>
+
+    <label>Password:</label><br>
+    <input type="password" id="password"><br>
+    <span id="passwordError" class="error"></span><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+<p id="successMessage"></p>
+
+
+<!-- ===== EXERCISE 2: CARD GALLERY ===== -->
+
+<h2>Card Gallery</h2>
+
+<div class="gallery">
+
+    <button id="leftBtn"><</button>
+
+    <div class="track" id="track">
+
+        <div class="card">
+            <img src="images/rafflesia.jpg">
+            <h3>Rafflesia</h3>
+            <p>One of the largest flowers in the world.</p>
+            <button>View More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/sunflower.jpg">
+            <h3>Sunflower</h3>
+            <p>A bright flower that follows the sun.</p>
+            <button>View More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/coneflower.jpg">
+            <h3>Coneflower</h3>
+            <p>A strong medicinal wildflower.</p>
+            <button>View More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/rose.jpg">
+            <h3>Rose</h3>
+            <p>A classic symbol of love and beauty.</p>
+            <button>View More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/tulip.jpg">
+            <h3>Tulip</h3>
+            <p>A colorful spring flower.</p>
+            <button>View More</button>
+        </div>
+
+        <div class="card">
+            <img src="images/marigold.jpg">
+            <h3>Marigold</h3>
+            <p>A bright golden flower often used in festivals.</p>
+            <button>View More</button>
+        </div>
+
+    </div>
+
+    <button id="rightBtn">></button>
+
+</div>
+
+<script src="Homework4_script.js"></script>
+</body>
+</html>
