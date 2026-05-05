@@ -1,0 +1,56 @@
+*{box-sizing: border-box;}
+/* app.js */
+.apptitle{
+  text-align: center;
+  color: darkslateblue
+}
+.appcontainer{
+  background-color: antiquewhite;
+  padding: 2rem;
+  width: 900px;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* card.js */
+.card{
+  width: 100%;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  padding: 1rem;
+
+}
+img{width: 100%; display: block;}
+.content{
+  font-size: 1.2rem;
+  color: darkblue;
+  font-weight: bolder;
+}
+.metadata{
+  color: gray;
+}
+/* user_feedback.js */
+.feedbackcard{
+  width: 30%;
+  border: solid 2px gray;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+}
+.cardfooter{
+  background-color: #888;
+  color: white;
+  padding: 0.2rem;
+}
+.description{margin-bottom: 2rem;}
+.feedbackcontainer:hover{
+  box-shadow: 0px 0px 5px 1px gray;
+  transform: scale(1.01);
+  overflow: hidden;
+}
+.addicon:hover{
+  cursor: pointer;
+  background-color: crimson;
+}
