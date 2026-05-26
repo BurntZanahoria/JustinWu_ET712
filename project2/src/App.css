@@ -1,0 +1,326 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f4f6f9;
+  color:#222;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#1e3a5f;
+  color:white;
+  padding:1rem 2rem;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:100;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.15);
+}
+
+.navbar h2{
+  font-size:1.8rem;
+}
+
+.nav-links{
+  display:flex;
+  gap:1.5rem;
+}
+
+.nav-links a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#ffd166;
+}
+
+/* HOME */
+
+.home{
+  text-align:center;
+  padding:2rem;
+}
+
+.home h1{
+  font-size:3rem;
+  margin-bottom:1rem;
+  color:#1e3a5f;
+}
+
+.home p{
+  font-size:1.2rem;
+  margin-bottom:2rem;
+}
+
+/* SLIDESHOW */
+
+.slideshow{
+  margin:auto;
+  max-width:1000px;
+}
+
+.slide-image{
+  width:100%;
+  height:420px;
+  object-fit:contain;
+  background:white;
+  border-radius:15px;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.15);
+}
+
+.slide-buttons{
+  margin-top:1rem;
+}
+
+.slide-buttons button{
+  padding:12px 22px;
+  margin:0 10px;
+  border:none;
+  border-radius:8px;
+  background:#1e3a5f;
+  color:white;
+  font-weight:bold;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.slide-buttons button:hover{
+  background:#ffd166;
+  color:black;
+}
+
+/* PAGE */
+
+.page{
+  padding:2rem;
+}
+
+.page h1{
+  text-align:center;
+  margin-bottom:2rem;
+  color:#1e3a5f;
+  font-size:2.5rem;
+}
+
+/* PRODUCT GRID */
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+
+.card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0px 4px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  padding-bottom:1rem;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0px 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img{
+  width:100%;
+  height:250px;
+  object-fit:cover;
+}
+
+.card h3{
+  margin-top:1rem;
+  color:#1e3a5f;
+}
+
+.card p{
+  margin:0.5rem 0;
+  font-size:1.1rem;
+  font-weight:bold;
+}
+
+.card button{
+  width:85%;
+  margin-top:10px;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  background:#1e3a5f;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.card button:hover{
+  background:#ffd166;
+  color:black;
+}
+
+/* MODAL */
+
+.modal-overlay{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.7);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:1rem;
+}
+
+.modal{
+  background:white;
+  width:90%;
+  max-width:500px;
+  max-height:90vh;
+  overflow-y:auto;
+  padding:20px;
+  position:relative;
+  border-radius:15px;
+}
+
+.modal img{
+  width:100%;
+  max-height:400px;
+  object-fit:contain;
+  border-radius:10px;
+}
+
+.modal h2{
+  margin-top:1rem;
+  color:#1e3a5f;
+}
+
+.modal p{
+  margin-top:1rem;
+  line-height:1.5;
+}
+
+.close-btn{
+  position:sticky;
+  top:0;
+  float:right;
+  border:none;
+  background:#1e3a5f;
+  color:white;
+  padding:8px 12px;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* CART */
+
+.cart-container{
+  padding:2rem;
+}
+
+.cart-container h1{
+  text-align:center;
+  margin-bottom:2rem;
+  color:#1e3a5f;
+}
+
+.cart-item{
+  display:flex;
+  gap:20px;
+  background:white;
+  margin-bottom:20px;
+  padding:1rem;
+  border-radius:15px;
+  align-items:center;
+  box-shadow:0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.cart-item img{
+  width:120px;
+  height:120px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+.cart-item h3{
+  color:#1e3a5f;
+}
+
+.cart-item button{
+  margin-left:auto;
+  height:45px;
+  border:none;
+  background:#d62828;
+  color:white;
+  padding:10px 15px;
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.cart-item button:hover{
+  background:#ff4d4d;
+}
+
+.cart-container h2,
+.cart-container h3{
+  text-align:right;
+  margin-top:1rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+  .products-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .navbar{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+
+  .products-grid{
+    grid-template-columns:1fr;
+  }
+
+  .cart-item{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .cart-item button{
+    margin-left:0;
+  }
+
+  .home h1{
+    font-size:2.2rem;
+  }
+
+}
